@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --Orange97: rgba(255, 245, 240, 1);
+  --Orange95: rgba(255, 239, 229, 1);
+  --Orange90: rgba(255, 222, 204, 1);
+  --Orange80: rgba(255, 190, 153, 1);
+  --Orange75: rgba(255, 174, 128, 1);
+  --Orange65: rgba(255, 141, 77, 1);
+  --ciycle-color: rgba(255, 245, 240, 0.5);
+  --white-color: #fff;
+  --dark-color: #000;
+  --Grey30: rgba(76, 76, 77, 1);
+  --Grey20: rgba(51, 51, 51, 1);
+  --Grey15: rgba(38, 38, 38, 1);
+  --Grey10: rgba(26, 26, 26, 1);
+}
+
+body {
+  background-color: var(--Orange97);
+
+}
+
+.container {
+  padding: 0 162px;
+
+}
+
+header {
+  position: fixed;
+  width: 94.74%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999999;
+}
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 15px; 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Orange65);
+  border-radius: 6px;
+}
+
+@media (max-width:1919px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width:1100px) {
+  .container {
+    padding: 0 16px;
+  }
+}

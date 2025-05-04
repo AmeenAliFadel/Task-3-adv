@@ -1,0 +1,234 @@
+.history {
+  background-color: var(--white-color);
+  padding: 150px;
+  border: 2px solid var(--Grey15);
+  box-shadow: 6px 6px 0px 2px rgba(30, 30, 30, 1);
+  border-radius: 12px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.history .history-card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.history .history-card::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -15%;
+  transform: translateY(50%);
+  width: 2px;
+  height: 150%;
+  background-color: var(--Grey10);
+  outline: 5px solid var(--Orange80);
+}
+
+.history-line-container {
+  display: flex;
+  align-items: center;
+}
+
+.history-line {
+  width: 12.2767%;
+  min-width: 55px;
+  background-color: var(--Grey10);
+  height: 2px;
+  outline: 5px solid var(--Orange80);
+  position: relative;
+}
+
+.history-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--white-color);
+  border: 2px solid var(--Grey15);
+  border-radius: 50%;
+}
+
+.history-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--white-color);
+  border: 2px solid var(--Grey15);
+  border-radius: 50%;
+}
+
+.history-card:last-child::before {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.history .history-card .year-box {
+  padding: 30px 50px;
+  border: 2px solid var(--Grey15);
+  background-color: var(--white-color);
+  box-shadow: 6px 6px 0px 2px rgba(30, 30, 30, 1);
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  h3 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: var(--Grey10);
+  }
+}
+
+.history .history-card .history-card-desc {
+  h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: var(--Grey10);
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--Grey20);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:1919px) {
+  .history {
+    padding: 100px;
+    box-shadow: 4px 4px 0px 1px rgba(30, 30, 30, 1);
+    margin-top: 80px;
+    gap: 80px;
+  }
+
+  .history .history-card {
+    gap: 40px;
+  }
+
+  .history .history-card::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: -12%;
+    transform: translateY(50%);
+    width: 2px;
+    height: 150%;
+    background-color: var(--Grey10);
+    outline: 5px solid var(--Orange80);
+    overflow: hidden;
+  }
+
+  .history .history-card .year-box {
+    padding: 24px 34px;
+    box-shadow: 4px 4px 0px 1px rgba(30, 30, 30, 1);
+    border-radius: 10px;
+    img{
+      width: 60px;
+      height: 60px;
+    }
+    h3 {
+      font-size: 48px;
+    }
+  }
+  .history .history-card .history-card-desc {
+    h3 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (max-width:1439px){
+  .history .history-card .history-card-desc {
+
+  
+    p {
+      font-size: 14px;
+    }
+  }
+
+}
+@media (max-width:1100px){
+  .history {
+    padding: 50px 20px 50px 30px;
+    box-shadow: 4px 4px 0px 1px rgba(30, 30, 30, 1);
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .history .history-card  {
+    flex-direction: column;
+    align-items: start;
+  }
+  .history .history-card .year-box {
+    padding: 20px 24px;
+    border-radius: 10px;
+    gap: 20px;
+    img{
+      width: 50px;
+      height: 50px;
+    }
+    h3 {
+      font-size: 38px;
+    }
+  }
+  .history .history-card::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: -40%;
+    transform: translateY(50%);
+    width: 2px;
+    height: 120%;
+    background-color: var(--Grey10);
+    outline: 5px solid var(--Orange80);
+    overflow: hidden;
+  }
+  .history-line {
+    width: 12.2767%;
+    min-width: 22px;
+    background-color: var(--Grey10);
+    height: 2px;
+    outline: 5px solid var(--Orange80);
+    position: relative;
+  }
+  
+.history .history-card .history-card-desc {
+  padding-left: 25px;
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+}
+}
+@media (max-width:540px){
+  .history .history-card::before{
+    top: -50%;
+  }
+}

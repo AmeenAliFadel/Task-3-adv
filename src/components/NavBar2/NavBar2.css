@@ -1,0 +1,133 @@
+.navbar2 {
+    width: 94.74%;
+    height: 80px;
+    margin: 14px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--Grey15);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.navbar2 .logo {
+    padding: 20px 24px;
+    background-color: var(--Orange65);
+    border-right: 2px solid var(--Grey15);
+    cursor: pointer;
+}
+
+.navbar2 .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar2 .nav-links li {
+    border-right: 2px solid var(--Grey15);
+    padding: 20px 34px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar2 .nav-links li a {
+    text-decoration: none;
+    color: var(--Grey15);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.navbar2 .nav-links li#home {
+    border-left: 2px solid var(--Grey15);
+}
+
+.navbar2 .nav-links li#contact {
+    border-right: 0;
+    background-color: var(--Orange75);
+}
+
+.navbar2 .nav-links li.active-link {
+    background-color: var(--Orange95) !important;
+}
+
+.nav-mobile {
+    display: none;
+    border-left: 2px solid var(--Grey15);
+    padding: 16px 30px;
+    background-color: var(--Orange95);
+    border-right: 0;
+}
+
+@media (max-width: 1919px) {
+    .navbar2 {
+        width: 92.99%;
+        height: 66px;
+        border-radius: 8px;
+    }
+
+    .navbar2 .logo {
+        padding: 16px 20px;
+    }
+
+    .navbar2 .nav-links li {
+        padding: 16px 30px;
+    }
+
+    .navbar2 .nav-links li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    .navbar2 .nav-links {
+        flex-direction: column;
+        width: 92.5%;
+        margin: 0 auto;
+        position:fixed;
+        top: 150px;
+        border: 2px solid var(--Grey15);
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        z-index: 9998;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+    .navbar2 .nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+        transform: scaleY(1);
+}
+
+    .navbar2 .nav-links li {
+        width: 100%;
+        height: auto;
+        border: 0;
+        border-bottom: 2px solid var(--Grey15);
+    }
+
+    .navbar2 .nav-links li#home {
+        border-left: 0;
+    }
+
+    .navbar2 .nav-links li#contact {
+        border-right: 0;
+        border-bottom: 0;
+    }
+}

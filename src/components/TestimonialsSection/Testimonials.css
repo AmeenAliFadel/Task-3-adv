@@ -1,0 +1,145 @@
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.testimonials-card {
+    border: 2px solid var(--Grey15);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px rgba(30, 30, 30, 1);
+    background-color: var(--white-color);
+    width: 26.716%;
+    height: 462px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.testimonials-card .testimonials-icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--Grey20);
+    margin-bottom: 12px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.testimonials-card h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--Grey20);
+    margin-bottom: 30px;
+}
+
+.testimonials-card p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--Grey20);
+    margin-top: 30px;
+}
+
+.prev-btn,
+.next-btn {
+    width: 58px;
+    height: 58px;
+    border: 2px solid var(--Grey20);
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.testimonials-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+@media (max-width:1919px) {
+    .testimonials {
+        gap: 40px;
+        margin-top: 80px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .testimonials-card {
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 2px rgba(30, 30, 30, 1);
+
+        width: 26.5625%;
+        height: 374px;
+    }
+
+    .testimonials-card .testimonials-icon {
+        width: 66px;
+        height: 66px;
+        padding: 8px;
+        margin-bottom: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .testimonials-card h3 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .testimonials-card p {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:1439px) {
+    .testimonials-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials-card {
+        width: 100%;
+        padding: 30px;
+        box-shadow: 4px 4px 0px 1px rgba(30, 30, 30, 1);
+
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+}
