@@ -41,6 +41,10 @@ export default function NavBar2({ list }) {
         {list.map((item) => {
           const id = item.toLowerCase().replace(/\s+/g, '');
           const path = `/${id}`;
+          if (path === "/home") {
+            path = "/"
+          }
+
           const isActive = location.pathname === path;
 
           return (
