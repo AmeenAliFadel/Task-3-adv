@@ -40,7 +40,7 @@ export default function NavBar2({ list }) {
       <ul className={`nav-links ${openNav ? 'active' : ''}`}>
         {list.map((item) => {
           const id = item.toLowerCase().replace(/\s+/g, '');
-          const path = `/${id}`;
+          let path = `/${id}`;
           if (path === "/home") {
             path = "/"
           }
